@@ -1,6 +1,4 @@
 # <p align = "center"> Git笔记 </p>
-## 文件说明
-- Git开发常用命令，是在 [hongiii](https://github.com/hongiii/gitNotes_from_Liao/blob/master/gitNotes_from_Liao.md) 的基础上在进行补充
 
 ## Git介绍
 - Git是分布式版本控制系统
