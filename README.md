@@ -110,7 +110,7 @@ commit-id是版本号，是一个用SHA1计算出的序列
 版本库：在工作区有一个隐藏目录`.git`，是Git的版本库。
 Git的版本库中存了很多东西，其中最重要的就是称为stage（或者称为index）的暂存区，还有Git自动创建的`master`，以及指向`master`的指针`HEAD`。
 
-![理解](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384907720458e56751df1c474485b697575073c40ae9000/0)
+![理解](./images/add.png)
 
 进一步解释一些命令：
 - `git add`实际上是把文件添加到暂存区
@@ -264,7 +264,7 @@ $ git log --graph
 
 #### 获取远程分支并创建切换本地分支
 ```bash
-$ git checkout -b <local-barnch-name> origin/<remote-barnch-name>  
+$ git checkout -b <local-barnch-name> origin/<remote-barnch-name>
 ```
 ### 工作现场
 #### 保存工作现场
@@ -285,12 +285,12 @@ $ git stash list
 ```bash
 $ git stash pop
 ```
-- `git stash pop` 
+- `git stash pop`
 - 恢复最新的进度到工作区，git默认会把工作区和暂存区的改动都恢复到工作区
 - `git stash pop --index`
 - 恢复最新的进度到工作区和暂存区（尝试将原来暂存区的改动还恢复到暂存区）
 - `git stash pop stash@{1}`
-- 恢复指定的进度到工作区。`stash_id`是通过`git stash list`命令得到的 
+- 恢复指定的进度到工作区。`stash_id`是通过`git stash list`命令得到的
 - 通过`git stash pop`命令恢复进度后，会删除当前进度。
 
 ```bash
